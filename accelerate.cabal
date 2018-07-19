@@ -282,13 +282,8 @@ Library
         , half                          >= 0.3
         , hashable                      >= 1.1
         , hashtables                    >= 1.2.3
-        , hedgehog                      >= 0.5
         , lens                          >= 4.0
         , mtl                           >= 2.0
-        , tasty                         >= 0.11
-        , tasty-expected-failure        >= 0.11
-        , tasty-hedgehog                >= 0.1
-        , tasty-hunit                   >= 0.9
         , template-haskell
         , terminal-size                 >= 0.3
         , transformers                  >= 0.3
@@ -568,6 +563,11 @@ test-suite nofib-interpreter
   build-depends:
           base                          >= 4.7
         , accelerate
+        , hedgehog                      >= 0.5
+        , tasty                         >= 0.11
+        , tasty-expected-failure        >= 0.11
+        , tasty-hedgehog                >= 0.1
+        , tasty-hunit                   >= 0.9
 
   ghc-options:
         -O2
